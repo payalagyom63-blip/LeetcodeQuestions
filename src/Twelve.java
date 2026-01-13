@@ -4,8 +4,9 @@ public class Twelve {
 
     public String longestCommonPrefix(String[] strs) {
 
+        String res = "";
         if (strs == null || strs.length == 0) {
-            return "";
+            return res;
         }
 
         Arrays.sort(strs);
@@ -22,7 +23,12 @@ public class Twelve {
             }
         }
 
-        return c == 0 ? "" : first.substring(0, c);
+        if(c==0){
+            return res;
+        }
+        else {
+            return first.substring(0, c);
+        }
     }
 
     public static void main(String[] args) {

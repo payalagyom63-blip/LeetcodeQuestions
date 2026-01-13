@@ -15,7 +15,7 @@ public class Eight {
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 2; i++) {
-
+            //this is to remove triple duplicates
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }

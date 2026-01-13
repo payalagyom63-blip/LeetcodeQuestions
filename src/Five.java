@@ -2,13 +2,13 @@ public class Five {
 
     public int maxSubArray(int[] nums) {
 
-        int sum = 0;
-        int max = nums[0];
+        int sum = 0;// 0
+        int max = nums[0];// -2
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {//0
             sum = sum + nums[i];
 
-            if (sum>= max) {
+            if (sum>= max) {//
                 max= sum;
             }
             if (sum < nums[i]) {
